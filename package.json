@@ -1,0 +1,14 @@
+{
+  "name": "playwright-billing-qa-suite",
+  "version": "1.0.0",
+  "description": "Production-pattern Playwright E2E suite for SaaS billing systems with sabotage-verified assertions",
+  "scripts": {
+    "test:list": "playwright test --list",
+    "lint": "node --check playwright.config.js && node --check utils/billing-helpers.js && node --check tests/topup.spec.js && node --check tests/plans.spec.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0"
+  },
+  "license": "MIT",
+  "author": "Daud Khan"
+}

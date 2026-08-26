@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Config & Suite Validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Syntax check config and specs
+        run: npm run lint
+
+      - name: Validate suite compiles and enumerates correctly
+        run: npx playwright test --list
+        # This is a sanitized reference repo pointed at a placeholder
+        # domain (dashboard.demo-saas.example.com) - it intentionally
+        # does not execute against a live app in CI. --list proves the
+        # Playwright config, fixtures, and every spec file are valid
+        # and the suite would run cleanly against a real target.
