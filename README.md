@@ -3,6 +3,8 @@
 [![CI](https://github.com/daud-khan-qa/playwright-billing-qa-suite/actions/workflows/ci.yml/badge.svg)](https://github.com/daud-khan-qa/playwright-billing-qa-suite/actions/workflows/ci.yml)
 [![Playwright](https://img.shields.io/badge/tested%20with-Playwright-2EAD33.svg)](https://playwright.dev)
 
+[![License: Source-Available](https://img.shields.io/badge/license-source--available-lightgrey.svg)](#license)
+
 **All rights reserved.** This repository is shared publicly for portfolio and demonstration purposes only. No license is granted to copy, modify, or redistribute this code without my permission.
 
 A production-grade Playwright E2E test suite pattern for SaaS billing systems - subscriptions, top-ups, invoices, plan upgrades/downgrades, and Stripe checkout flows.
