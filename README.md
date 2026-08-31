@@ -1,8 +1,9 @@
 # Playwright Billing QA Suite (Sanitized Reference Implementation)
 
 [![CI](https://github.com/daud-khan-qa/playwright-billing-qa-suite/actions/workflows/ci.yml/badge.svg)](https://github.com/daud-khan-qa/playwright-billing-qa-suite/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Playwright](https://img.shields.io/badge/tested%20with-Playwright-2EAD33.svg)](https://playwright.dev)
+
+**All rights reserved.** This repository is shared publicly for portfolio and demonstration purposes only. No license is granted to copy, modify, or redistribute this code without my permission.
 
 A production-grade Playwright E2E test suite pattern for SaaS billing systems - subscriptions, top-ups, invoices, plan upgrades/downgrades, and Stripe checkout flows.
 
